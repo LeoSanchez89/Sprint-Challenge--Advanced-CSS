@@ -1,17 +1,25 @@
 // Home Content
 
 .home {
-
+  @media @phone{
+   width:600px;
+   padding:3%;         
+  }
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
+    img {
+      border-radius: 10px;
+      @media @phone{
+        width:100%;
+      }
+    }
   }
 
   .space-images {
@@ -24,6 +32,15 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone{
+        width:100%;
+      }
+    }
+
+    .mobile-cutoff{
+      @media @phone{
+        display:none;
+      }
     }
   }
 
@@ -45,9 +62,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      flex-direction: column-reverse;
+      width:100%;
+      padding:0;
+      padding: 2%;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone{
+        width:100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,13 +84,30 @@
       }
 
       .btn {
+
+        @media @phone{
+          width:500px;
+          height: 60px;
+          margin-left:4%;
+        }
+        
+        .button(@nav-font, 100px, @nav-bg);
+        
+        &:hover{
+          .button(@nav-bg, 100px, @nav-font);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone{
+        width:100%;
+        margin:0;
+        padding-bottom:2%;
+      } 
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +115,4 @@
       }
     }
   }
-}// home
+} // home

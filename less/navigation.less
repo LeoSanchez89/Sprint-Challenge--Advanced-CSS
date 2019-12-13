@@ -1,1 +1,58 @@
 // Navigation code here
+nav {
+  padding-bottom: 1%;
+  .flex();
+  flex-direction: column;
+  @media @phone {
+    width:100%;
+    padding-top:2%;
+        
+  }
+
+  h1 {
+    font-size: 4rem;
+    padding: 1%;
+    @media @phone{
+     width:100%;    
+     margin-left:60%;
+     font-size: 4.5rem;
+    }
+  }
+
+  .navbar {
+    .flex(space-between, none);
+    width: 30%;
+    @media @phone {
+     width: 100%;
+      margin-left: 30%;
+      padding:2%;
+      
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    &:hover{
+      animation: pulse 4s infinite;
+    }
+        
+    @media @phone{
+        font-size: 2rem;
+    }
+  }
+}
+@keyframes pulse {
+  0% {
+    color: black;
+  }
+  50% {
+    color:orange;
+  }
+  75% {
+    color: #FF4136;
+  }
+  100%{
+    color:purple;
+  }
+}
