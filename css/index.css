@@ -167,9 +167,22 @@ nav {
   align-items: center;
   flex-direction: column;
 }
+@media ( max-width: 500px ) {
+  nav {
+    width: 100%;
+    padding: 2%;
+  }
+}
 nav h1 {
   font-size: 4rem;
   padding: 1%;
+}
+@media ( max-width: 500px ) {
+  nav h1 {
+    width: 100%;
+    margin-left: 83%;
+    font-size: 4.5rem;
+  }
 }
 nav .navbar {
   display: flex;
@@ -177,9 +190,21 @@ nav .navbar {
   align-items: none;
   width: 30%;
 }
+@media ( max-width: 500px ) {
+  nav .navbar {
+    width: 100%;
+    margin-left: 50%;
+    padding: 2%;
+  }
+}
 nav a {
   text-decoration: none;
   font-size: 1.8rem;
+}
+@media ( max-width: 500px ) {
+  nav a {
+    font-size: 2rem;
+  }
 }
 footer {
   color: #22283B;
@@ -190,6 +215,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media ( max-width: 500px ) {
+  .home {
+    width: 750px;
+    padding: 2%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -246,6 +277,19 @@ footer {
   font-size: 2rem;
   border-radius: 5px;
   color: #F6F6F6;
+  text-align: center;
+  padding-top: 3%;
+}
+.home .walk .walk-text .btn:hover {
+  display: block;
+  background-color: #F6F6F6;
+  margin: 2 10px 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 3.8rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: #454A59;
   text-align: center;
   padding-top: 3%;
 }

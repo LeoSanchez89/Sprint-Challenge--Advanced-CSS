@@ -1,6 +1,10 @@
 // Home Content
 
 .home {
+  @media @phone{
+   width:750px;
+   padding:2%;         
+  }
   .intro {
     h2 {
       padding: 15px;
@@ -11,7 +15,6 @@
     }
 
     img {
-      
       border-radius: 10px;
     }
   }
@@ -60,7 +63,12 @@
       }
 
       .btn {
+        
         .button(@nav-font, 100px, @nav-bg);
+        
+        &:hover{
+          .button(@nav-bg, 100px, @nav-font);
+        }
       }
     }
 

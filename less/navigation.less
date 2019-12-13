@@ -1,23 +1,40 @@
 // Navigation code here
 nav {
-    padding-bottom:1%;
-    .flex();
+  padding-bottom: 1%;
+  .flex();
+  flex-direction: column;
+  @media @phone {
+    width:100%;
+    padding:2%;
     
-    flex-direction: column;
-    
-    h1{
-        font-size: 4rem;
-        padding:1%;
-    }
+  }
 
-    .navbar{
-        .flex(space-between,none);
-        width:30%;
+  h1 {
+    font-size: 4rem;
+    padding: 1%;
+    @media @phone{
+     width:100%;    
+     margin-left:83%;
+     font-size: 4.5rem;
     }
+  }
 
-    a{
-        text-decoration: none;
-        font-size: 1.8rem;
-        
+  .navbar {
+    .flex(space-between, none);
+    width: 30%;
+    @media @phone {
+     width: 100%;
+      margin-left: 50%;
+      padding:2%;
+      
     }
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    @media @phone{
+        font-size: 2rem;
+    }
+  }
 }
